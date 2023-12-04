@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트1_NASA</title>
+
+    <!-- 그리드가이드 
+    <link rel="stylesheet" href="grid-guide.css">-->
+    <!-- 외부스타일시트연결 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 외부스크립트연결 -->
+    <script src="js/js.js"></script>
+    <!-- 제이쿼리연결 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/7e6dbb372f.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(function(){
+            //titleBox의 li의 순번찾기
+            $('.titleBox li').click(function(){
+    
+                //클릭한 나 자신의 순번을 변수로 지정하기
+                var i = $(this).index()
+                //콘솔에 확인하기
+                console.log(i)
+    
+                //찾아낸 순번을 listBox안의 div의 순서에 맞게 보이기
+                $('.txt div').css({'display':'none'})
+                $('.txt div').eq(i).css({'display':'block'})
+    
+                $('.titleBox li').removeClass('on')
+                //클릭한 나 자신에게 클래스 on값 더하기
+                $(this).addClass('on')
+            });
+
+
+
+                $('.titleBox li').click(function(){
+                var u = $(this).index()
+                console.log(u)
+                $('.msimgBox div').css({'display':'none'})
+                $('.msimgBox div').eq(u).css({'display':'block'})
+                $('.titleBox li').removeClass('on')
+                $(this).addClass('on')
+            });
+
+                //박스3설정 left
+                var ai= 0
+                $('.box3 .fa-arrow-left').click(function(){
+                    if(ai<4)ai++;
+                $('.trailer ul').css({'left':-420*ai})
+            });
+
+            //박스3설정 right
+            var ai= 0
+                $('.box3 .fa-arrow-right').click(function(){
+                    if(ai>0){ai--;
+                $('.trailer ul').css({'left':-420*ai})}
+                
+            });
+            
+            
+
+
+        })
+        </script>
+</head>
+<body>
+    <header class="box1">
+        <div class="box1-inner">
+            <div class="box1-inner1">
+                <div class="box1-1 logo">
+                    <p><img src="img/hearder_nasa_logo.png" alt="" width="90px" height="auto"></p>
+                </div>
+                <div class="box1-2 menu">
+                    <ul>
+                        <li><a href="#">NASA에 대해</a></li>
+                        <li><a href="#">주요임무</a></li>
+                        <li><a href="#">이미지&영상</a></li>
+                        <li><a href="#">수준별페이지</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box1-inner2">
+                <div class="box1-3 util">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-moon-o" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-music" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a></li>
+                        <form><input type="text" id="search" maxlength="20" placeholder="검색하기"><i class="fa fa-search" aria-hidden="true"></i></form>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="box2">
+        <div class="txt">
+            <h2>미국 항공우주국</h2>
+            <p>NASA는 항공과 우주에서 미지의 세계를 탐험하고 인류의 이익을 위해<br>혁신하며 발견을 통해 세상에 영감을 줍니다.</p>
+        </div>
+        <div class="vid">
+            <video autoplay muted loop>
+                <source src="img/bg2.mp4">
+            </video>
+        </div>
+        
+    </div>
+    <section class="box3">
+        <div class="box3-inner">
+            <div class="title"><span></span><h1>NEWS</h1></div>
+            <div><i class="fa fa-arrow-left" aria-hidden="true"></i>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+            <div class="trailer">
+                <ul>
+                    <li>
+                        <p class="imgBox1"></p>
+                        <div class="txt">
+                            <h1>NASA의 프시케 우주선, 소행성<br>으로 가는 도중 광학 통신 데모</h1>
+                            <p>2023.10.18</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="imgBox2"></p>
+                        <div class="txt">
+                            <h1>N2023년 Eclipse Explorer소개<br>금환일식에 대한 대화형 가이드</h1>
+                            <p>2023.10.18</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="imgBox3"></p>
+                        <div class="txt">
+                            <h1>대기를 연구하기 위해 NASA 로켓은 10월 이클립스의 그림자로...</h1>
+                            <p>2023.10.18</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="imgBox4"></p>
+                        <div class="txt">
+                            <h1>NASA, X-59 실험 항공기의 첫 비행을 2024년으로 목표</h1>
+                            <p>2023.10.18</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="imgBox5"></p>
+                        <div class="txt">
+                            <h1>NASA 로버 챌린지에서 경쟁할 전세계 수십개의 학생 팀</h1>
+                            <p>2023.10.18</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="imgBox6"></p>
+                        <div class="txt">
+                            <h1>NASA 부행정관 밥 카바나, 38년 만에 은퇴</h1>
+                            <p>2023.10.18</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="imgBox7"></p>
+                        <div class="txt">
+                            <h1>NASA 우주 비행사, 우주 정거장에서 플로리다 학생들과 대화</h1>
+                            <p>2023.10.18</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="imgBox8"></p>
+                        <div class="txt">
+                            <h1>불가리아, NASA 본부에서 Artemis Accords 서명; 31개국 가입</h1>
+                            <p>2023.10.18</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="box4">
+        <div class="box4-inner">
+            <dic class="box4-1">
+                <div class="title"><span></span><h1>주요임무</h1></div>
+                <div class="msimgBox">
+                    <div class="img1" style="display: block;"></div>
+                    <div class="img2"></div>
+                    <div class="img3"></div>
+                </div>
+            </dic>
+            <div class="box4-2 txtBox">
+                <div class="titleBox">
+                    <ul>
+                        <li class="on" style="display: block;"><p>다가오는 임무</p></li>
+                        <li><p>진행중인 임무</p></li>
+                        <li><p>마무리된 임무</p></li>
+                    </ul>
+                </div>
+                <div class="txt">
+                    <div class="txt1" style="display: block;">
+                        <h2>NASA, 우주 정거장에 다가오는 SpaceX<br>
+                            재공급 발사에 미디어 초대</h2>
+                            <p>NASA를 위한 국제 우주 정거장에 대한 SpaceX의 29번째 상업용 재공급 임무에 대한 
+                                미디어 인증은 2023년 10월 18일까지 진행됩니다. 회사의 Falcon 9 로켓에 탑재된 SpaceX Dragon 화물 우주선의 이륙은 11월 5일 일요일 오후 10시 1분(미국 동부 표준시 기준) 이전에 플로리다에 있는 NASA의 케네디 우주 센터에 있는 발사 단지 39A에서 목표로 삼고 있습니다. 이는 2021년 12월에 시작된 기관의 레이저 통신 중계 시연 에 고해상도 데이터를 전송하여 NASA 최초의 양방향 엔드 투 엔드 레이저 중계 시스템을 완성할 것입니다. Crew-8 SpaceX Falcon 9 로켓과 Dragon 우주선의 일상적인 유지 관리 및 처리가 진행 중입니다. Crew-8은 기관의 Crew-9 임무를 잠시 이양한 후 2024년 8월 말에 지구로 돌아올 것으로 예상됩니다.</p>
+                    </div>
+                    <div class="txt2">
+                        <h2>제임스 웹 우주 망원경</h2>
+                        <p>NASA의 제임스 웹 우주 망원경과 허블 우주 망원경이 MACS0416으로 알려진 광대한 은하단을 연구하기 위해 연합했습니다. 그 결과 나온 전색사진은 가시광선과 적외선을 결합하여 지금까지 촬영된 우주의 가장 포괄적인 모습 중 하나를 구성합니다. 지구에서 약 43억 광년 떨어진 곳에 위치한 MACS0416은 충돌하는 한 쌍의 은하단으로, 결국 결합되어 훨씬 더 큰 은하단을 형성하게 됩니다. NASA 제임스 웹 우주 망원경 의 근적외선 카메라 수석 연구원인 Marcia Rieke 박사는 태평양 천문 학회(ASP)의 2023년 가장 권위 있는 상을 수상했습니다 . ASP의 Catherine Wolfe Bruce 금메달은 애리조나 대학의 천문학 리전트 교수이자 Steward Observatory의 Elizabeth Roemer 기부 의장인 Rieke에게 수여됩니다. Rieke의 수상 및 업적은 11월 11일 토요일 캘리포니아 레드우드 시티에서 열린 ASP Awards Gala에서 인정되었습니다.</p>
+                    </div>
+                    <div class="txt3">
+                        <h2>아르테미스 협정</h2>
+                        <p>아르테미스 임무를 통해 우리는 과학적 발견, 기술 발전을 위해 달을 탐험하고 화성으로의 인간 임무를 준비하면서 다른 세계에서 살고 일하는 방법을 배웁니다. 우리는 상업 및 국제 파트너와 협력하여 달에서 최초의 장기 기지를 구축할 것입니다. NASA는 그 어느 때보다 달 표면을 더 많이 탐험하기 위해 혁신적인 기술을 사용하여 최초의 여성이자 최초의 유색인종을 달에 착륙시킬 예정입니다.NASA는 아르테미스 프로그램을 통해 최초의 여성이자 최초의 유색인종을 달에 착륙시키고, 새로운 과학적 발견을 하고, 모두의 이익을 위해 그 어느 때보다 달 표면을 더 많이 탐험할 것입니다.
+                            NASA가 Artemis를 이끄는 동안 국제 파트너십은 기관이 화성에 대한 최초의 인간 임무를 준비할 달에서 지속 가능하고 강력한 존재를 달성하는 데 중요한 역할을 할 것입니다.
+                            수많은 국가와 민간 기업이 달 주변에서 임무와 작전을 수행함에 따라 민간 탐사 및 우주 공간 사용을 관리하는 공통 원칙이 필요합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="box5">
+        <div class="box5-inner">
+            <h2>NASA 파트너십</h2>
+            <p>NASA와 협력하여 혁신적이고 효과적이며 효율적인 인수 비즈니스 솔루션을 탐색하고<br>실행하여 NASA의 임무를 수행하는 기능과 운영을 최적화합니다.</p>
+        </div>
+    </div>
+
+
+    <div class="box6">
+        <div class="box6-inner">
+            <div class="box6-left">
+                <div class="bookingTitle">
+                    <h2>NASA본사 방문 예약</h2>
+                </div>
+                <div class="bookingSub">
+                    <div class="check">
+                        <div class="cal001">
+                            <h3>방문 일시 선택</h3>
+                            <p>예약일자는 매일 오전 9시 일주일 단위로 오픈됩니다. </p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th>토</th>
+                                        <th>일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><p>15</p></td>
+                                        <td><p>16</p></td>
+                                        <td><p>17</p></td>
+                                        <td><p>18</p></td>
+                                        <td><p>19</p></td>
+                                        <td><p>20</p></td>
+                                        <td><p>21</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="time">
+                                <ul>
+                                    <li>13:00</li>
+                                    <li>15:00</li>
+                                    <li>17:00</li>
+                                    <li>19:00</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <form action="">
+                                <input type="text" id="name" placeholder="이름" autofocus>
+                                <input type="text" id="phone" placeholder="연락처" autofocus>
+                                <input type="text" id="age" placeholder="나이" autofocus>
+                                <input type="text" id="add" placeholder="주소" autofocus>
+                                <input type="text" id="vis" placeholder="방문목적" autofocus>
+                                <div class="btn"><p>예약완료하기</p><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.789004437802!2d-77.02114951071503!3d38.88306897466092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b77f50ae6f01%3A0x676e7adc4032899b!2sNASA!5e0!3m2!1sko!2skr!4v1700101479700!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="box7">
+        <div class="box7-inner">
+            <div class="footerLogo">
+                <img src="img/footer_nasa_logo.png" alt="" width="140px" height="auto">
+            </div>
+            <div class="footerTxt">
+                <h2>미국 항공 우주국</h2>
+                <ul>
+                    <li><a href="#">NASA소개</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 취급방침</a></li>
+                </ul>
+                <p class="Copyright">Copyright ⓒ 2023 WOOJU. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
