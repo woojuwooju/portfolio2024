@@ -84,7 +84,7 @@ header {
 }
 
 .header_inner {
-    width: 70%;
+    width: 60%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -102,7 +102,7 @@ header {
 }
 
 .header_inner ul {
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -134,17 +134,17 @@ header span {
 
 
 
-
+/* 제목 설정 */
 /* 제목 설정 */
 section {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .txt {
     width: 40%;
-    height: 9vw;
-    margin: 5vw auto;
+    height: 7vw;
+    margin: 3vw auto;
     text-align: center;    
     position: relative;
     color: #373737;
@@ -153,18 +153,19 @@ section {
 .bigtxt {
     width: 100%;
     height: 75%;
-    font-size: 5vw;
+    font-size: 4vw;
     font-family: 'Pretendard-Bold';
-    padding-left: 2vw;
+    
 
 }
 
 .ani_1>p {
     font-size: 5.5vw;
+    font-family: 'Pretendard-Thin';
     color: #6F55EA;
     position: absolute;
     top: -0.2vw;
-    left: 0.8vw;
+    left: 5vw;
 }
 
 .ani_1 p:nth-child(1) {
@@ -179,10 +180,11 @@ section {
 
 .ani_2>p {
     font-size: 5.5vw;
+    font-family: 'Pretendard-Thin';
     color: #6F55EA;
     position: absolute;
     top: -0.2vw;
-    left: 21.8vw;
+    left: 18.8vw;
 }
 
 .ani_2 p:nth-child(1) {
@@ -200,7 +202,6 @@ section {
     color: #626262;
     letter-spacing: 1px;
 }
-
 
 @keyframes ani1 {
     0% {transform: translateX(8px);}

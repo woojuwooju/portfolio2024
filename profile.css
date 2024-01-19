@@ -76,7 +76,7 @@ header {
 }
 
 .header_inner {
-    width: 70%;
+    width: 60%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -94,7 +94,7 @@ header {
 }
 
 .header_inner ul {
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: space-between;
