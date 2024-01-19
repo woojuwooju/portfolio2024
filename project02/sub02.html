@@ -11,6 +11,17 @@
     <!-- 폰트어썸 -->
     <script src="https://kit.fontawesome.com/7e6dbb372f.js" crossorigin="anonymous"></script>
 
+
+
+    <!-- 제이쿼리 CDN -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+
+    <script src="js/sub02.js"></script>
+
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon.png" type="image/x-icon">
 </head>
 <body>
 
@@ -77,9 +88,9 @@
     <header>
         <div class="box1">
             <ul class="box1-1 util">
-                <li><a href="#">로그인</a href="#"></li>
+                <li><a href="loginpage.html">로그인</a></li>
                 <li>&#124;</li>
-                <li><a href="#">장바구니</a></li>
+                <li><a href="#">장바구니<p><span>00</span></p></a></li>
             </ul>
         </div>
         <nav class="box2">
@@ -87,7 +98,7 @@
                 <div class="logo">
                     <p><a href="index.html"><img src="img/mainlogo.png" alt="" width="130px" height="auto"></a></p>                </div>
                 <ul class="menu">
-                    <li><a href="#">신상품</a></li>
+                    <li><a href="sub01.html">신상품</a></li>
                     <li><a href="#">여성</a></li>
                     <li><a href="#">남성</a></li>
                     <li><a href="#">키즈</a></li>
@@ -97,6 +108,26 @@
             <form><input type="text" id="search" maxlength="15"><i class="fa fa-search" aria-hidden="true"></i></form>
         </nav>
     </header>
+
+
+        <!-- 장바구니 클릭시 팝업 -->
+        <div class="shopPop">
+            <section>
+                <h2>장바구니 목록</h2>
+                <p><span>00</span>개</p>
+                <div class="popin">
+                    
+                </div>
+            </section>
+    
+            <div class="shopPopbtn">
+                <button class="login"><a href="#">결제하기</a></button>
+                <button class="reset">계속 쇼핑하기</button>
+            </div>
+        </div>
+
+        
+
 
     <section class="main">
         <div class="elf">
@@ -111,7 +142,9 @@
         <div class="shopClickimg">
             <ul>
                 <li>
-                    <div class="img01"></div>
+                    <div class="img01">
+                        <img src="img/bag.png" alt="">
+                    </div>
                     <div class="txt">
                         <h3>맥도날드X크록스 햄버글러 클러그</h3>
                         <h4>색상 : 블랙/화이트</h4>
@@ -119,7 +152,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="img02"></div>
+                    <div class="img02">
+                        <img src="img/bag.png" alt="">
+                    </div>
                     <div class="txt">
                         <h3>엘프 클래식 클로그</h3>
                         <h4>색상 : 레몬</h4>
@@ -127,7 +162,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="img03"></div>
+                    <div class="img03">
+                        <img src="img/bag.png" alt="">
+                    </div>
                     <div class="txt">
                         <h3>코코멜론 클래식 클로그 토들러</h3>
                         <h4>색상 : 일렉트릭 블루</h4>
@@ -135,7 +172,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="img04"></div>
+                    <div class="img04">
+                        <img src="img/bag.png" alt="">
+                    </div>
                     <div class="txt">
                         <h3>맥도날드 X 크록스 그리미스 코지 샌들</h3>
                         <h4>색상 : 퍼플</h4>
@@ -143,7 +182,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="img05"></div>
+                    <div class="img05">
+                        <img src="img/bag.png" alt="">
+                    </div>
                     <div class="txt">
                         <h3>에스파 X 크록스 스톰프 라인드 클로그
                         </h3>
@@ -152,7 +193,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="img06"></div>
+                    <div class="img06">
+                        <img src="img/bag.png" alt="">
+                    </div>
                     <div class="txt">
                         <h3>클래식 플랫폼 라인드 데이지 클로그</h3>
                         <h4>색상 : 멀티</h4>
@@ -160,7 +203,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="img07"></div>
+                    <div class="img07">
+                        <img src="img/bag.png" alt="">
+                    </div>
                     <div class="txt">
                         <h3>바야 라인드 퍼즈 데이지 클로그</h3>
                         <h4>색상 : 멀티</h4>
@@ -168,7 +213,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="img08"></div>
+                    <div class="img08">
+                        <img src="img/bag.png" alt="">
+                    </div>
                     <div class="txt">
                         <h3>NBA LA 레이커스 클래식 클로그</h3>
                         <h4>색상 : 썬플라워</h4>
@@ -176,7 +223,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="img09"></div>
+                    <div class="img09">
+                        <img src="img/bag.png" alt="">
+                    </div>
                     <div class="txt">
                         <h3>클래식 글리터 라인드 클로그</h3>
                         <h4>색상 : 블랙/실버</h4>
@@ -184,7 +233,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="img10"></div>
+                    <div class="img10">
+                        <img src="img/bag.png" alt="">
+                    </div>
                     <div class="txt">
                         <h3>바야 라인드 퍼즈 스트랩 마블 클로그</h3>
                         <h4>색상 : 화이트/멀티</h4>
@@ -192,7 +243,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="img11"></div>
+                    <div class="img11">
+                        <img src="img/bag.png" alt="">
+                    </div>
                     <div class="txt">
                         <h3>클래식 라인드 글리터 클로그 토들러</h3>
                         <h4>색상 : 플라밍고</h4>
@@ -200,7 +253,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="img12"></div>
+                    <div class="img12">
+                        <img src="img/bag.png" alt="">
+                    </div>
                     <div class="txt">
                         <h3>클래식 라인드 마블 클로그 키즈</h3>
                         <h4>색상 : 일렉트릭 핑크/멀티</h4>

@@ -68,6 +68,7 @@ a {text-decoration: none;
 img {border: none;
     vertical-align: bottom;}
 body {
+    overflow-x: hidden;
 }
 
     /* 전체여백 설정 */
@@ -583,6 +584,32 @@ html, body {
     letter-spacing: 1px;
 }
 
+.util li a:hover {
+    text-decoration: underline;
+}
+
+
+
+.util p {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(194, 0, 0);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 5px;
+    position: absolute;
+    display: none;
+}
+
+.util span {
+    line-height: 20px;
+}
+
+
+
+
 
 /* 메뉴설정 */
 .box2 {
@@ -619,6 +646,10 @@ html, body {
     font-family: 'Pretendard-SemiBold';
 }
 
+.box2 .menu li a:hover {
+    color: #646464;
+    
+}
 
 
 
@@ -710,7 +741,98 @@ html, body {
 
 
 
+
+/* 장바구니 클릭시 팝업 */
+.shopPop {
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    width: 30%;
+    height: 50%;
+    right: 0;
+    top: 0;
+    color: #fff;
+    z-index: 1000;
+    display: none;
+    border-radius: 20px;
+}
+
+.shopPop h2 {
+    letter-spacing: 1px;
+    display: inline-block;
+    
+}
+.shopPop p {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    color: rgb(198, 198, 198);
+}
+
+
+.shopPop section {
+    width: 80%;
+    height: 50%;
+    margin: 50px auto;
+}
+
+.popin {
+    height: 90%;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    color: #000;
+    font-size: 18px;
+    line-height: 2;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+
+
+.shopPopbtn {
+
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.shopPopbtn button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+    margin: 0 5px;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border: 1px solid rgb(205, 205, 205);
+}
+
+.login a{
+    color: #fff;
+}
+
+
+.shopPopbtn button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.login a:hover {
+    color: #000;
+}
+
+
+
+
+
+
+
+
 /* 상품판매시작 */
+
+
+
 
 .shopClickimg {
     width: 87%;
@@ -736,6 +858,7 @@ html, body {
     border-radius: 20px;
     text-align: left;
     cursor: pointer;
+    position: relative;
 }
 
 .shopClickimg ul li div:nth-child(1) {
@@ -751,6 +874,113 @@ html, body {
     border-radius: 20px 20px 0 0;
 }
 
+
+
+
+/* 장바구니 아이콘 */
+.shopClickimg .img01 img {
+    width: 30px;
+    height: 30px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 170px;   
+}
+
+.shopClickimg .img02 img {
+    width: 30px;
+    height: 30px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 170px;   
+}
+
+.shopClickimg .img03 img {
+    width: 30px;
+    height: 30px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 170px;   
+}
+
+.shopClickimg .img04 img {
+    width: 30px;
+    height: 30px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 170px;   
+}
+.shopClickimg .img05 img {
+    width: 30px;
+    height: 30px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 170px;   
+}
+.shopClickimg .img06 img {
+    width: 30px;
+    height: 30px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 170px;   
+}
+.shopClickimg .img07 img {
+    width: 30px;
+    height: 30px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 170px;   
+}
+.shopClickimg .img08 img {
+    width: 30px;
+    height: 30px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 170px;   
+}
+.shopClickimg .img09 img {
+    width: 30px;
+    height: 30px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 170px;   
+}
+.shopClickimg .img10 img {
+    width: 30px;
+    height: 30px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 170px;   
+}
+.shopClickimg .img11 img {
+    width: 30px;
+    height: 30px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 170px;   
+}
+.shopClickimg .img12 img {
+    width: 30px;
+    height: 30px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 170px;   
+}
+
+
+
+/* 상품 이미지 */
 .shopClickimg .img01 {
     background-image: url(img/shopimg01.png);
 }

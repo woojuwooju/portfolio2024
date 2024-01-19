@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/7e6dbb372f.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <img src="img/mainlogo.png" alt="">
+    </header>
+
+    <section>
+        <div class="loginBox">
+            <div class="loginTxt">
+                <div class="id">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <input type="text" placeholder="아이디">
+                </div>
+                <div class="pass">
+                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                    <input type="password" placeholder="비밀번호">
+                </div>
+                <div class="check">
+                    <input type="checkbox">
+                    <p>로그인 상태 유지</p>
+                </div>
+                <button>로그인</button>
+                <div id="naver_id_login"></div>
+            </div>
+            <div class="util">
+                <a href="#"><p>비밀번호 찾기</p></a>
+                <p>	&#8739;</p>
+                <a href="#"><p>아이디 찾기</p></a>
+                <p>	&#8739;</p>
+                <a href="#"><p>회원가입</p></a>
+            </div>
+        </div>
+        
+    </section>
+    
+
+
+
+
+
+
+
+
+
+    <style>
+
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Black';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+    /* reset */
+    * {margin: 0;padding: 0;}
+    ul,ol {list-style: none;}
+    a {text-decoration: none;color: #000;}
+    img {border: none;vertical-align: bottom;}
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(245, 245, 245);
+        }
+    
+
+        header {
+            width: 10%;
+            height: 10%;
+            margin: 10% auto;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        .loginBox {
+            position: absolute;
+            top: 8%;
+            left: 40%;
+            width: 20vw;
+            height: 43vh;
+            margin: 10% auto;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+
+
+        .loginTxt {
+            width: 90%;
+            height: 70%;
+            margin: 50px auto;
+
+        }
+
+
+        .util {
+            width: 90%;
+            height: 10%;
+            display: flex;
+            margin: 22% auto;
+            justify-content: space-around;
+        }
+
+        .util a {
+            color: rgb(127, 127, 127);
+            font-family: 'Pretendard-Light';
+        }
+
+        .util p {
+            color: rgb(127, 127, 127);
+            font-family: 'Pretendard-Light';
+        }
+        .check {
+            display: flex;
+            font-family: 'Pretendard-Light';
+            font-size: 15px;
+            width: 65%;
+            margin: 10px auto;
+
+        }
+
+        .check p {
+            margin-left: 3px;
+        }
+
+        .id input {
+            width: 45%;
+            height: 100%;
+            padding: 15px 37px;
+            border-radius: 5px;
+            border: 1px solid rgb(184, 184, 184);
+            margin: 5px;
+        }
+
+        .pass input {
+            width: 45%;
+            height: 100%;
+            padding: 15px 37px;
+            border-radius: 5px;
+            border: 1px solid rgb(184, 184, 184);
+            margin: 5px;
+        }
+
+
+
+        button {
+            padding: 15px 95px;
+            border-radius: 5px;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            margin-top: 30px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        #naver_id_login {
+            margin: 10px auto;
+        }
+
+        i {
+            color: rgb(155, 155, 155);
+            position: absolute;
+        }
+
+        .id i {
+            top: 7.8vh;
+            left: 4.8vw;
+        }
+
+        .pass i {
+            top: 14vh;
+            left: 4.8vw;
+        }
+    </style>
+
+<script type="text/javascript">
+    var naver_id_login = new naver_id_login("GZAIhSLsmrP3RV2BG8pm", "YOUR_CALLBACK_URL");
+    var state = naver_id_login.getUniqState();
+    naver_id_login.setButton("green", 3,50);
+    naver_id_login.setDomain("YOUR_SERVICE_URL");
+    naver_id_login.setState(state);
+    naver_id_login.setPopup();
+    naver_id_login.init_naver_id_login();
+
+
+    var naverIdLogin = new naver.LoginWithNaverId({
+
+        clientId:"GZAIhSLsmrP3RV2BG8pm",  //클라이언트아이디작성
+        callBackUrl:"YOUR_CALLBACK_URL",  //콜백URL을 작성
+        isPopup:false,  //팝업연동처리
+        loginButton:{color:"green", type:3, height:50}  //로그인타입을지정
+        
+    });
+
+    naverLogin.init();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,465 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Black';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* reset */
+* {margin: 0;
+    padding: 0;
+    font-family: 'Pretendard-Light';}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+img {border: none;
+    vertical-align: bottom;}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.inner {
+    width: 60%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+.top {
+    width: 90%;
+    height: 55%;
+    display: flex;
+    margin-left: 3vw;
+}
+
+.top_left {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.top_left_txt {
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.top_left h2 {
+    font-size: 5vw;
+    font-family: 'Pretendard-Bold';
+}
+
+.top_left h2:nth-child(1) {
+    color: #927DF3;
+}
+
+.top_left h2:nth-child(2) {
+    color: #2B2B2B;
+}
+
+.ani_1 {
+    width: 4vw;
+    height: 2.8vw;
+    position: absolute;
+    top: 58%;
+    left: 13%;
+    
+}
+
+.ani_1 img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ani_1 img:nth-child(1) {
+
+    animation: ani1 2s ease-in-out infinite alternate
+}
+
+.ani_1 img:nth-child(3) {
+
+    animation: ani11 2s ease-in-out infinite alternate
+}
+
+
+
+
+.ani_2 {
+    width: 4vw;
+    height: 2.8vw;
+    position: absolute;
+    top: 58%;
+    left: 47%;
+    
+}
+
+.ani_2 img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.ani_2 img:nth-child(1) {
+
+    animation: ani1 2s ease-in-out infinite alternate
+}
+
+.ani_2 img:nth-child(3) {
+
+    animation: ani11 2s ease-in-out infinite alternate
+}
+
+@keyframes ani1 {
+    0% {transform: translateX(8px);}
+    100%{transform: translateX(-8px);}
+}
+
+@keyframes ani11 {
+    0% {transform: translateX(-8px);}
+    100%{transform: translateX(8px);}
+}
+
+.top_left p {
+    font-size: 1vw;
+    font-family: 'Pretendard-Light';
+    color: #A9A9A9;
+    letter-spacing: 1px;
+    line-height: 1.4;
+
+}
+
+.top_right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    transition: all 1.5s;
+}
+
+.top_right:hover {
+    transition: all 1s;
+    transform: scale(1.05);
+}
+
+.box1 {
+    width: 60%;
+    height: 60%;
+    background:linear-gradient(to bottom right,#927DF3,#563FC6);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 2.5vw;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.box1 p {
+    font-size: 1.2vw;
+    font-family: 'Pretendard-Medium';
+    color: #fff;
+    margin: 0 auto;
+    
+}
+
+.box1 img {
+    width: auto;
+    height: 1.2vw;
+    position: absolute;
+    top: 5vw;
+    right: 2vw;
+
+}
+
+.box1_img {
+    position: absolute;
+    width: 45%;
+    height: 100%;
+}
+
+.box1_img img {
+    width: auto;
+    height: 100%
+}
+
+.bottom {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.bottom a {
+    transition: all 1.5s;
+
+    
+}
+.bottom a:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+
+}
+
+.bottom p {
+    font-size: 1.2vw;
+    font-family: 'Pretendard-Medium';
+    color: #fff;
+    margin-left: 2vw;
+}
+
+.box2 {
+    width: 47%;
+    height: 75%;
+    background:linear-gradient(to bottom right,#F582AD,#EA4B7C);
+    border-radius: 2.5vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.box2 img {
+    width: auto;
+    height: 1.2vw;
+    margin-left: 8vw;
+}
+
+
+.box3 {
+    width: 23%;
+    height: 75%;
+    background:linear-gradient(to bottom right,#F5C892,#F59723);
+    border-radius: 2.5vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.box3 img {
+    width: auto;
+    height: 1.2vw;
+    margin-left: 5vw;
+
+}
+
+
+
+.box4 {
+    width: 23%;
+    height: 75%;
+    background:linear-gradient(to bottom right,#7CDBF4,#41C1E1);
+    border-radius: 2.5vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.box4 img {
+    width: auto;
+    height: 1.2vw;
+    margin-left: 2vw;
+}
+
+
+/* .bottom p {position: relative;
+}
+.bottom span {position: absolute;
+background-color:#fff;
+width: 0;
+display: block;
+height: 2px;
+top: 105%;
+transition: all  0.5s;}
+
+
+.bottom a:hover span {width: 100%;}
+ */
+
+
+
+
+
+/* 호버시 효과퍼옴 */
+.box1:hover {
+    color: rgba(255, 255, 255, 0.6);
+    -ms-animation: circleOpacity forwards 1s;
+    -moz-animation: circleOpacity forwards 1s;
+    -webkit-animation: circleOpacity forwards 1s;
+    animation: circleOpacity forwards 1s;
+  }
+  
+  @keyframes circleOpacity {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .box1:before, .box1:after {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    content: "◯";
+    display: block;
+    width: 100%;
+    font-size: 0px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    z-index: -1;
+  }
+  
+  .box1:hover:before {
+    animation: circledrop 1s;
+    -ms-animation: circledrop 1s;
+    -moz-animation: circledrop 1s;
+    -webkit-animation: circledrop 1s;
+  }
+  
+  .box1:hover:after {
+    animation: circledrop 1s 0.5s;
+    -ms-animation: circledrop 1s 0.5s;
+    -moz-animation: circledrop 1s 0.5s;
+    -webkit-animation: circledrop 1s 0.5s;
+  }
+  
+  @keyframes circledrop {
+    0% {
+      opacity: 1;
+      font-size: 0;
+      top: 110px;
+    }
+    100% {
+      opacity: 0;
+      font-size: 80px;
+      top: 60px;
+    }
+  }
+
+
+
+/* 호버시 효과퍼옴 */
+.bottom a:hover {
+    color: rgba(255, 255, 255, 0.6);
+    -ms-animation: circleOpacity forwards 1s;
+    -moz-animation: circleOpacity forwards 1s;
+    -webkit-animation: circleOpacity forwards 1s;
+    animation: circleOpacity forwards 1s;
+  }
+  
+  @keyframes circleOpacity {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .bottom a:before, .bottom a:after {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    content: "◯";
+    display: block;
+    width: 100%;
+    font-size: 0px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    z-index: -1;
+  }
+  
+  .bottom a:hover:before {
+    animation: circledrop 1s;
+    -ms-animation: circledrop 1s;
+    -moz-animation: circledrop 1s;
+    -webkit-animation: circledrop 1s;
+  }
+  
+  .bottom a:hover:after {
+    animation: circledrop 1s 0.5s;
+    -ms-animation: circledrop 1s 0.5s;
+    -moz-animation: circledrop 1s 0.5s;
+    -webkit-animation: circledrop 1s 0.5s;
+  }
+  
+  @keyframes circledrop {
+    0% {
+      opacity: 1;
+      font-size: 0;
+      top: 110px;
+      
+    }
+    100% {
+      opacity: 0;
+      font-size: 80px;
+      top: 60px;
+    }
+  }

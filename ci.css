@@ -1,0 +1,209 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Black';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* reset */
+* {margin: 0;
+    padding: 0;
+    font-family: 'Pretendard-Thin';}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+img {border: none;
+    vertical-align: bottom;}
+
+/* 스크롤바 숨기기 */
+html::-webkit-scrollbar {
+    display: none; 
+}
+
+/* 유틸 설정 */
+header {
+    width: 100%;
+    height: 8vh;
+    position: relative;
+}
+
+.header_inner {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header_inner>a:nth-child(1) {
+    width: 6%;
+    height: 100%;
+    background-image: url(img/home_button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.header_inner ul {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_inner ul li {
+    font-size: 1vw;
+}
+
+.header_inner ul li a {
+    color: #303030;
+    font-family: 'Pretendard-Medium';
+}
+
+.header_inner ul li:nth-child(3) a{
+    color: #6F55EA;
+    text-decoration: underline;
+}
+
+header span {
+    background-color: rgb(222, 222, 222);
+    display: inline-block;
+    height: 1px;
+    top: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* 제목 설정 */
+section {
+    width: 100%;
+    height: auto;
+}
+
+.txt {
+    width: 40%;
+    height: 9vw;
+    margin: 5vw auto;
+    text-align: center;    
+    position: relative;
+    color: #373737;
+}
+
+.bigtxt {
+    width: 100%;
+    height: 75%;
+    font-size: 5vw;
+    font-family: 'Pretendard-Bold';
+    padding-left: 1.5vw;
+
+}
+
+.ani_1>p {
+    font-size: 5.5vw;
+    font-family: 'Pretendard-Thin';
+    color: #6F55EA;
+    position: absolute;
+    top: -0.2vw;
+    left: 7.6vw;
+}
+
+.ani_1 p:nth-child(1) {
+    animation: ani1 2s ease-in-out infinite alternate
+}
+
+.ani_1 p:nth-child(3) {
+    animation: ani11 2s ease-in-out infinite alternate
+}
+
+
+
+.ani_2>p {
+    font-size: 5.5vw;
+    font-family: 'Pretendard-Thin';
+    color: #6F55EA;
+    position: absolute;
+    top: -0.2vw;
+    left: 14.7vw;
+}
+
+.ani_2 p:nth-child(1) {
+    animation: ani1 2s ease-in-out infinite alternate
+}
+
+.ani_2 p:nth-child(3) {
+    animation: ani11 2s ease-in-out infinite alternate
+}
+
+
+.smalltxt {
+    font-size: 1vw;
+    font-family: 'Pretendard-Light';
+    color: #626262;
+    letter-spacing: 1px;
+}
+
+
+@keyframes ani1 {
+    0% {transform: translateX(8px);}
+    100%{transform: translateX(-8px);}
+}
+
+@keyframes ani11 {
+    0% {transform: translateX(-8px);}
+    100%{transform: translateX(8px);}
+}
+

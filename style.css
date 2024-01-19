@@ -1,11 +1,204 @@
 /* 언어설정 */
 @charset 'UTF-8';
 
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Black';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
 /* reset */
 * {margin: 0;
-    padding: 0;}
+    padding: 0;
+    font-family: 'Pretendard-Light';}
 ul,ol {list-style: none;}
 a {text-decoration: none;
     color: #000;}
 img {border: none;
     vertical-align: bottom;}
+
+
+/* 커서 디자인  */
+div.on {
+    cursor: url("img/click_mouse.png"), auto;
+    position:absolute;
+
+  }
+  
+
+
+
+/* 오픈 설정 */
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+
+}
+
+.open_folder {
+    width: 25vw;
+    height: 50vh;
+    position: relative;
+    top: 20vh;
+    left: 30vw;
+    z-index: 1;
+    animation: ani1 1.2s infinite alternate;
+
+}
+
+
+
+.open_folder img {
+    width: 100%;
+    height: auto;
+    margin: 8% 22%;
+    position: absolute;
+}
+
+
+/* .open_folder h1 {
+    position: absolute;
+    font-size: 2vw;
+    color: #fff;
+    top: 35vh;
+    left: 9vw;
+    font-family: 'Pretendard-SemiBold';
+} */
+
+
+
+
+.open_icon {
+    width:16vw;
+    height: 16vw;
+    position: absolute;
+    border-radius: 50%;
+    top: 16vh;
+    left: 34vw;
+    
+
+}
+
+.open_icon p {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transition: all 0.8s;
+    z-index: 1;
+    opacity:0;
+    
+}
+
+
+/* 
+@keyframes ani1 {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(20deg);}
+}
+@keyframes ani11 {
+    0%{transform: rotate(20deg);}
+    100%{transform: rotate(0deg);}
+}
+
+@keyframes ani2 {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(65deg);}
+}
+@keyframes ani22 {
+    0%{transform: rotate(65deg);}
+    100%{transform: rotate(0deg);}
+} */
+
+
+.open_icon p img {
+    width: 5vw;
+    height: auto;
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-top: -2.5vw;
+    margin-left: -2.5vw;
+}
+
+.open_icon p:nth-child(1){transform: rotate(0deg);}
+.open_icon p:nth-child(1) img{transform: rotate(-20deg);}
+.open_icon p:nth-child(1).on {transform: rotate(20deg);
+opacity: 1;}
+
+.open_icon p:nth-child(2){transform: rotate(0deg);}
+.open_icon p:nth-child(2) img{transform: rotate(-65deg);}
+.open_icon p:nth-child(2).on {transform: rotate(65deg);
+opacity: 1;}
+
+.open_icon p:nth-child(3){transform: rotate(0deg);}
+.open_icon p:nth-child(3) img{transform: rotate(-110deg);}
+.open_icon p:nth-child(3).on {transform: rotate(110deg);
+opacity: 1;}
+
+.open_icon p:nth-child(4){transform: rotate(0deg);}
+.open_icon p:nth-child(4) img{transform: rotate(-155deg);}
+.open_icon p:nth-child(4).on {transform: rotate(155deg);
+opacity: 1;}
+
+.open_icon p:nth-child(5){transform: rotate(0deg);}
+.open_icon p:nth-child(5) img{transform: rotate(-200deg);}
+.open_icon p:nth-child(5).on {transform: rotate(200deg);
+opacity: 1;}
+
+@keyframes ani1 {
+    0% {transform: translateY(10px);}
+    100%{transform: translateY(-10px);}
+}

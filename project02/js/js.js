@@ -24,11 +24,24 @@ $(function(){
     },9000);
 
 
+
+
+
+
+
     //박스3-4 텍스트 차례로 위로
     $(window).scroll(function(){
         let sc = $(this).scrollTop()
         let si = $('.box3-3').offset().top
         console.log(sc)
+
+
+        if(sc>=si-400){
+            $('.box3-3 img').addClass('on')
+        }
+        else{
+            $('.box3-3').removeClass('on')
+        }
 
         if(sc>=si-500){
             $('.box3-5').addClass('on')
@@ -150,7 +163,7 @@ $(function(){
         });
     });
     
-    // 크록스클럽 클릭하기
+    // 크록스클럽 개인정보처리방침 클릭하기
     $('.inputClick_icon2').click(function(){
         $(this).toggleClass('clicked');
         $(this).css({'right':'20px'})
@@ -160,8 +173,12 @@ $(function(){
         $('.inputClick_icon1').toggleClass('clickedd');
     });
     
-    
-    
+    // 크록스클럽 신청하기 클릭
+    $('.inputClick div a').click(function(e){
+        e.preventDefault()
+        let name = $('.name input').val()
+        alert(name+'님 신청이 완료되었습니다.')
+    });
     
     })
     

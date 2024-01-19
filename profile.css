@@ -1,0 +1,721 @@
+/* 언어설정 */
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Black';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* reset */
+* {margin: 0;
+    padding: 0;
+    font-family: 'Pretendard-Thin'; }
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+img {border: none;
+    vertical-align: bottom;}
+
+
+
+/* 유틸 설정 */
+header {
+    width: 100%;
+    height: 8vh;
+    position: relative;
+}
+
+.header_inner {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header_inner>a:nth-child(1) {
+    width: 6%;
+    height: 100%;
+    background-image: url(img/home_button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.header_inner ul {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_inner ul li {
+    font-size: 1vw;
+}
+
+.header_inner ul li a {
+    color: #303030;
+    font-family: 'Pretendard-Medium';
+}
+
+.header_inner ul li:nth-child(1) a{
+    color: #6F55EA;
+    text-decoration: underline;
+}
+
+header span {
+    background-color: rgb(222, 222, 222);
+    display: inline-block;
+    height: 1px;
+    top: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* 프로필 시작 */
+section {
+    width: 70%;
+    height: 70vh;
+    margin: 10vh auto;
+}
+
+.top {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+.top .img {
+    width: 35%;
+    height: 100%;
+}
+
+
+.img_img {
+    width: 100%;
+    height: 60%;
+    background-image: url(img/profile.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.img_txt {
+    width:75%;
+    height: 35%;
+    background-image: url(img/profile_txt.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.wrap {
+    width: 40%;
+    height: 100%;
+}
+
+.name {
+    width: 100%;
+    height: 45%;
+    padding-bottom:4vh;
+}
+
+.name_1 {
+    width: 50%;
+    height: 25%;
+    margin-left: 10px;
+}
+
+.name_1 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name_1 ul li:nth-child(1) {
+    font-size: 1.2vw;
+    color: #2B2B2B;
+    font-family: 'Pretendard-Bold';
+}
+
+.name_1 ul li:nth-child(2) {
+    font-size: 0.9vw;
+    color: #2B2B2B;
+    font-family: 'Pretendard-Regular';
+    padding-top: 5px;
+}
+
+.name_2 {
+    width: 100%;
+    height: 85%;
+    
+
+}
+
+.name_2 ul {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.name_2 ul li {
+    margin: 0.2vw;
+    padding: 0.5vw 0.9vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2vw;
+    font-size: 0.9vw;
+    color: #828282;
+    border: 1px solid #c6c6c6;
+    font-family: 'Pretendard-Regular';
+}
+
+
+
+
+
+
+
+
+
+
+/* 스킬 설정 */
+.skill {
+    width: 100%;
+    height: 30%;
+}
+
+.skill_1 {
+    font-size: 1.2vw;
+    color: #2B2B2B;
+    font-family: 'Pretendard-Bold';
+    padding-bottom: 1vw;
+    padding-left: 10px;
+}
+
+.skill_2 {
+    width: 100%;
+    height: 100%;
+}
+
+.skill_2 ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_2 ul li {
+    width: 19%;
+    height: 100%;
+    text-align: center;
+    font-size: 0.9vw;
+    color: #2B2B2B;
+    position: relative;
+} 
+
+.skill_2 ul li p {
+    font-family: 'Pretendard-Regular';
+}
+.skill_2 ul li canvas {width: 100%;}
+
+
+.skill_2 li:nth-child(1) p {
+    position: absolute;
+    top: 5.5vw;
+    left: 0.5vw;
+}
+
+.skill_2 li:nth-child(2) p {
+    position: absolute;
+    top: 5.5vw;
+    left: 0.8vw;
+}
+
+.skill_2 li:nth-child(3) p {
+    position: absolute;
+    top: 5.5vw;
+    left: 1.5vw;
+}
+
+.skill_2 li:nth-child(4) p {
+    position: absolute;
+    top: 5.5vw;
+    left: 1.5vw;
+}
+
+.skill_2 li:nth-child(5) p {
+    position: absolute;
+    top: 5.5vw;
+    left: 1.8vw;
+}
+
+
+.chartimg1{
+    width: 1.9vw;
+    height: auto;
+    position: absolute; 
+    top: 1.9vw;
+    left: 1.6vw;
+}
+
+.chartimg2{
+    width: 1.9vw;
+    height: auto;
+    position: absolute; 
+    top: 1.7vw;
+    left: 1.6vw;
+}
+
+.chartimg3{
+    width: 1.4vw;
+    height: auto;
+    position: absolute; 
+    top: 1.7vw;
+    left: 2vw;
+}
+
+.chartimg4{
+    width: 2.2vw;
+    height: auto;
+    position: absolute; 
+    top: 1.6vw;
+    left: 1.5vw;
+}
+
+.chartimg5{
+    width: 2.2vw;
+    height: auto;
+    position: absolute; 
+    top: 1.6vw;
+    left: 1.5vw;
+}
+
+
+.chart2 {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* 자격증 설정 */
+
+.license {
+    width: 20%;
+    height: 70%;
+    font-size: 1.2vw;
+    color: #2B2B2B;
+    font-family: 'Pretendard-Bold';
+    padding-left: 3vw;
+    
+}
+
+
+.license_2 {
+    width: 100%;
+    height: 70%;
+    margin-top: 3vh;
+    display: flex;
+    
+}
+
+.license2_1 {
+    font-size: 1vw;
+    
+}
+
+.license2_1 li {
+    padding: 1vh 0;
+    color: #828282;
+    font-family: 'Pretendard-Light';
+    
+}
+
+.license2_2 li {
+    padding: 1vh ;
+    color: #2B2B2B;
+    font-size: 1vw;
+    font-family: 'Pretendard-Medium';
+}
+
+.bottom {
+    width: 100%;
+    height: 30%;
+}
+
+
+.bottom_1 {
+    width: 100%;
+    height: 25%;
+    font-size: 1.2vw;
+    color: #2B2B2B;
+    font-family: 'Pretendard-Bold';
+   
+}
+.bottom_2 {
+    width: 100%;
+    height: 75%;
+   
+}
+
+.graph {
+    width: 0;
+    height: 24%;
+    display: flex;
+    font-family: 'Pretendard-Thin';
+    position: relative;   
+    background-color: #927DF3;
+    border-radius: 10vw;
+}
+
+.graph.on {
+    width: 100%;
+    transition: all 6s;
+}
+
+.graph div {
+    width: 5vw;
+    font-size: 1.2vw;
+    color: #fff;
+    font-family: 'Pretendard-Medium';   
+    position: absolute;
+    top: 0.5vh;
+    left: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2px;
+}
+
+.graph img {
+    width: 0.5vw;
+    height: 2vh;
+}
+
+.graph div p {
+    font-size: 1vw;
+    font-family: 'Pretendard-Regular';
+}
+.graph div:nth-child(2) {
+    left: 9vw;
+}
+
+.graph div:nth-child(3) {
+    left: 20vw;
+}
+
+.graph div:nth-child(4) {
+    left: 46.5vw;
+}
+
+.graph div:nth-child(5) {
+    left: 55vw;
+}
+
+
+
+
+.graph_txt {
+    width: 96%;
+    height: 70%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.graph_txt img {
+    height: 5vw;
+    width: auto;
+}
+
+.graph_txt>div {
+    padding: 1vw 0.5vw;
+    position: relative;
+
+}
+
+.graph_txt div p {
+    width: 1px;
+    height: 0;
+    background-color: #927DF3;
+    position: absolute;
+}
+
+.graph_txt div span {
+    width: 0.5vw;
+    height: 1vh;
+    border-radius: 1vw;
+    background-color: #927DF3;
+    position: absolute;
+    opacity: 0;
+}
+
+
+
+
+.history1 div {
+    opacity: 0;
+}
+
+.history1 div.on {
+    opacity: 1;
+    transition: all 1.5s;
+}
+.history1 p.on {
+    height: 90%;
+    transition: all 2s;
+}
+
+.history1 span.on {
+    opacity: 1;
+}
+
+
+
+.history1 p {
+    top: 0;
+    left: 0;
+}
+
+.history1 span {
+    top: 100%;
+    margin-top: -0.4vw;
+    left: -0.2vw
+}
+
+.history1 div {
+    padding-right: 1vw;
+}
+
+.history2 {
+    width:15%;
+}
+
+.history2 div {
+    opacity: 0;
+}
+
+.history2 div.on {
+    opacity: 1;
+    transition: all 1.5s;
+}
+
+.history2 p {
+    top: 0;
+    left: 0;
+}
+
+.history2 span {
+    top: 100%;
+    margin-top: -0.4vw;
+    left: -0.2vw
+}
+
+.history2 p.on {
+    height: 90%;
+    transition: all 2s;
+    
+}
+
+.history2 span.on {
+    opacity: 1;
+}
+
+.history3 {
+    width:38%;
+    display: flex;
+}
+
+.history3 div {
+    opacity: 0;
+}
+
+.history3 div.on {
+    opacity: 1;
+    transition: all 1.5s;
+}
+
+.history3 p {
+    top: 0;
+    left: 0;
+}
+
+.history3 span {
+    top: 100%;
+    margin-top: -0.4vw;
+    left: -0.2vw
+}
+
+.history3 h5 {
+    margin-left: 1vw;
+    background-color: #F6F4FF;
+    border-radius: 1vw;
+    font-size: 0.8vw;
+    font-family: 'Pretendard-Thin';
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+    margin-top: -10px;
+    opacity: 0;
+}
+
+.history3 h5.on {
+    opacity: 1;
+    transition: all 1.5s;
+}
+.history3 p.on {
+    height: 90%;
+    transition: all 2s;
+    
+}
+
+.history3 span.on {
+    opacity: 1;
+}
+
+
+
+.history4 {
+    width: 11%;
+}
+.history4 div {
+    opacity: 0;
+}
+
+.history4 div.on {
+    opacity: 1;
+    transition: all 1.5s;
+}
+
+.history4 p {
+    top: 0;
+    left: 0;
+}
+
+.history4 span {
+    top: 100%;
+    margin-top: -0.4vw;
+    left: -0.2vw
+}
+
+.history4 p.on {
+    height: 90%;
+    transition: all 2s;
+    
+}
+
+.history4 span.on {
+    opacity: 1;
+}
+
+.history5 {
+    width: 18%;
+}
+
+.history5 div {
+    opacity: 0;
+}
+
+.history5 div.on {
+    opacity: 1;
+    transition: all 1.5s;
+}
+.history5 p {
+    top: 0;
+    left: 0;
+}
+
+.history5 span {
+    top: 100%;
+    margin-top: -0.4vw;
+    left: -0.2vw
+}
+
+
+.history5 p.on {
+    height: 90%;
+    transition: all 2s;
+    
+}
+
+.history5 span.on {
+    opacity: 1;
+}
+
+
+
+
+
+
+.graph_txt div h3 {
+    font-size: 1vw;
+    padding-left: 0.8vw;
+    font-family: 'Pretendard-Light';
+}
+.graph_txt div h4 {
+    font-size: 0.8vw;
+    color: #828282;
+    font-family: 'Pretendard-Thin';
+    padding: 0.3vw 0.8vw
+}
