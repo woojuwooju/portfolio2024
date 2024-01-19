@@ -16,8 +16,6 @@ img {border: none;
 
 
 /* 박스1 설정 */
-
-
 .box1-inner {
     height: 13vh;
     display: flex;
@@ -113,7 +111,6 @@ img {border: none;
     width: 100%;
     height: 90vh;
     position: relative;
-    overflow: hidden;
 }
 
 .box2 .txt {
@@ -137,10 +134,9 @@ img {border: none;
 .vid {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -200px;
     z-index: -1;
     width: 100%;
-    height: auto;
 }
 
 .vid video {
@@ -327,7 +323,6 @@ img {border: none;
     height: 70vh;
     background-color: rgb(0, 0, 0);
     color: #fff;
-
 }
 
 .box4-inner {
@@ -592,7 +587,7 @@ img {border: none;
     
 }
 
-.cal001 tbody p.on {
+.cal001 tbody p:hover {
     background:linear-gradient(90deg, #9A0E92, #0B2096);
     color: #fff;
 }
@@ -617,7 +612,7 @@ img {border: none;
     text-align: center;
 }
 
-.time li.on {
+.time li:hover {
     background-color: rgb(228, 228, 228);
 }
 
@@ -799,97 +794,6 @@ img {border: none;
     letter-spacing: 2px;
     
 }
-
-
-
-
-
-
-/* 예약화면 설정 */
-.fixed {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
-
-.fixed.on {
-    display: flex;
-}
-
-.fixed article {
-    width: 25%;
-    height: 35vh;
-    background-color: #fff;
-    border-radius: 30px 30px 20px 20px;
-    position: relative;
-}
-
-.fixed article p {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    text-align: center;
-    line-height: 1.1;
-    color: #fff;
-    cursor: pointer;
-}
-
-
-
-
-.fixed article ul {
-    width: 93%;
-    padding-left: 30px;
-    padding-top: 10px;
-    color: #9A0E92;
-    
-
-}
-.fixed article li {
-    padding: 3px;
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: underline 2px solid rgb(226, 226, 226);
-    text-underline-offset : 8px;
-}
-.fixed article div {
-    padding: 20px;
-    background:linear-gradient(90deg, #9A0E92, #0B2096);
-    color: #fff;
-    font-size: 20px;
-    border-radius: 20px 20px 0 0;
-    padding-left: 32px;
-    font-weight: 500;
-}
-
-
-.fixed span {
-    font-weight: 400;
-    color: rgb(40, 40, 40);
-
-}
-
-
-body.fix {
-    overflow: hidden;
-}
-
-
-
-
-
-
-
 
 
 

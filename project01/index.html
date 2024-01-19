@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="grid-guide.css">-->
     <!-- 외부스타일시트연결 -->
     <link rel="stylesheet" href="style.css">
+    <!-- 외부스크립트연결 -->
+    <script src="js/js.js"></script>
     <!-- 제이쿼리연결 -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!-- 폰트어썸 -->
     <script src="https://kit.fontawesome.com/7e6dbb372f.js" crossorigin="anonymous"></script>
 
 
     <script>
         $(function(){
-            $('html,body').scrollTop(0)
             //titleBox의 li의 순번찾기
             $('.titleBox li').click(function(){
     
@@ -63,52 +63,7 @@
                 
             });
             
-            //예약하기 요일설정
-            $('.cal001 tbody p').click(function(){
-                var ic = $(this).index()
-                $('.cal001 tbody p').removeClass('on')
-                $(this).addClass('on')
-            });
-
-            //예약하기 시간설정
-            $('.time li').click(function(){
-                var iq = $(this).index()
-                $('.time li').removeClass('on')
-                $(this).addClass('on')
-            });
-
-            //버튼클릭했을때 정보를 가져와라
-            $('.btn').click(function(e){
-                e.preventDefault()
-
-                let date = $('.cal001 tbody p.on').text()
-                let time = $('.time li.on').text()
-                let name = $('#name').val()
-                let phone = $('#phone').val()
-                let age = $('#age').val()
-                let add = $('#add').val()
-                let vis = $('#vis').val()
-
-                $('.fixed article li').eq(0).find('span').text('2024년 2월'+(date)+'일')
-                $('.fixed article li').eq(1).find('span').text(time)
-                $('.fixed article li').eq(2).find('span').text((name)+' 님')
-                $('.fixed article li').eq(3).find('span').text(phone)
-                $('.fixed article li').eq(4).find('span').text(age)
-                $('.fixed article li').eq(5).find('span').text(add)
-                $('.fixed article li').eq(6).find('span').text(vis)
-
-                $('.fixed').addClass('on')
-                $('body').addClass('fix')
-                });
-
-                
-                $('.fixed article p').click(function(){
-                    $('.fixed').removeClass('on')
-                    $('body').removeClass('fix')
-    });
-
-
-
+            
 
 
         })
@@ -144,17 +99,17 @@
                     </ul>
                 </div>
             </div>
-            <div class="vid">
-            <video autoplay muted loop>
-                <source src="img/bg2.mp4">
-            </video>
-            </div>
         </div>
     </header>
     <div class="box2">
         <div class="txt">
             <h2>미국 항공우주국</h2>
             <p>NASA는 항공과 우주에서 미지의 세계를 탐험하고 인류의 이익을 위해<br>혁신하며 발견을 통해 세상에 영감을 줍니다.</p>
+        </div>
+        <div class="vid">
+            <video autoplay muted loop>
+                <source src="img/bg2.mp4">
+            </video>
         </div>
         
     </div>
@@ -274,23 +229,6 @@
         </div>
     </div>
 
-    <div class="fixed">
-        <article>
-            <div>예약이 완료되었습니다.</div>
-            <p>&#10005;</p>
-            <ul>
-                <li>예약날짜 : <span></span></li>
-                <li>예약시간 : <span></span></li>
-                <li>이름 : <span></span></li>
-                <li>연락처 : <span></span></li>
-                <li>나이 : <span></span></li>
-                <li>주소 : <span></span></li>
-                <li>방문목적 : <span></span></li>
-            </ul>
-            
-        </article>
-    </div>
-
 
     <div class="box6">
         <div class="box6-inner">
@@ -372,7 +310,7 @@
                     <li><a href="#">이용약관</a></li>
                     <li><a href="#">개인정보 취급방침</a></li>
                 </ul>
-                <p class="Copyright">Copyright 2024. 김우주. All rights reserved.</p>
+                <p class="Copyright">Copyright ⓒ 2023 WOOJU. All rights reserved.</p>
             </div>
         </div>
     </div>
