@@ -50,14 +50,15 @@ img {border: none;
 }
 .menu a {
     display: block;
-    font-size: 20px;
+    font-size: 1vw;
 }
 
 .menu a:hover {
     text-decoration: underline;
 }
+
 .util {
-    width: 85%;
+    width: 50%;
     align-items: center;
 }
 
@@ -65,13 +66,17 @@ img {border: none;
     display: flex;
     justify-content: space-between;
 }
+
 .util a {
 
 }
-.util li i {
-    font-size: 22px;
-    padding-top: 9px;
-    
+
+
+
+.util form {
+    width: 8vw;
+    position: relative;
+
 }
 
 
@@ -80,24 +85,25 @@ img {border: none;
     transition: all 1s;
 }
 
-.fa-search {
+.util .fa-search {
     color:rgb(0, 0, 0);
+    font-size: 1vw;
+    padding-top: 0.9vh;
     position: absolute;
-    cursor: pointer;
-    right: 72px;
-    top: 51px;
-    font-size: 20px;
+    top: 0.5vh;
+    left: 6vw;
     
 }
 .util input {
-    width: 70%;
-    padding: 8px 0;
+    width: 100%;
+    padding: 1vh 0;
     box-sizing: border-box;
-    border-radius: 20px;
+    border-radius: 2vw;
     border: none;
     opacity: 50%;
-    padding-left: 25px;
-    margin-top: 2px;
+    padding-left: 1vw;
+    margin-top: 0.2vh;
+    font-size: 0.8vw;
 }
 
 .util input:focus {

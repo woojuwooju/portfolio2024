@@ -98,7 +98,7 @@ header {
 }
 
 .header_inner ul {
-    width: 40%;
+    width: 30%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -199,7 +199,7 @@ section {
     letter-spacing: 1px;
 }
 
-
+/* 
 @keyframes ani1 {
     0% {transform: translateX(8px);}
     100%{transform: translateX(-8px);}
@@ -208,7 +208,7 @@ section {
 @keyframes ani11 {
     0% {transform: translateX(-8px);}
     100%{transform: translateX(8px);}
-}
+} */
 
 
 
@@ -233,51 +233,229 @@ section {
 }
 
 .detailview>div {
-    width: 32%;
-    height: 60vh;
+    width: 31.6%;
+    height: 55vh;
     background-color: rgb(35, 35, 35);
-    margin-bottom: 1vw;
-    border-radius: 3vw;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    margin: 0.5vw;
+    border-radius: 1vw;
+    cursor: pointer;
 }
 
+
+
+
 .detailview div:nth-child(1) {
-    background-image: url(img/detailview01.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(img/Preview01.jpg);
 }
 .detailview div:nth-child(2) {
-    background-image: url(img/detailview02.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(img/Preview02.jpg);
 }
 
 .detailview div:nth-child(3) {
-    background-image: url(img/detailview03.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(img/Preview03.jpg);
 }
 
 .detailview div:nth-child(4) {
-    background-image: url(img/detailview04.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(img/Preview04.png);
+    margin-bottom: 5vw;
 }
 
 .detailview div:nth-child(5) {
-    background-image: url(img/detailview05.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(img/Preview05.png);
 }
 
 .detailview div:nth-child(6) {
-    background-image: url(img/detailview06.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(img/Preview06.jpg);
 }
-/* .promotion div {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 팝업 */
+
+
+
+/* 팝업1 */
+.pop01 {
     width: 100%;
-    height: 18vw;
-    background-color: rgb(35, 35, 35);
-    margin-bottom: 1vw;
-    border-radius: 3vw;
-} */
+    height: 100vh;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(14, 14, 14, 0.8);
+    overflow-y: scroll;
+    display: none;
+}
+
+.pop01.on {
+    display: block;
+}
+.pop01 div {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+.pop01 img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* 제주여행 */
+.pop02 {
+    width: 100%;
+    height: 100vh;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(14, 14, 14, 0.8);
+    overflow-y: scroll;
+    display: none;
+}
+
+.pop02.on {
+    display: block;
+}
+.pop02 div {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+.pop02 img {
+    width: 100%;
+    height: auto;
+}
+
+/* 팝업3 */
+.pop03 {
+    width: 100%;
+    height: 100vh;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(14, 14, 14, 0.8);
+    overflow-y: scroll;
+    display: none;
+}
+
+.pop03.on {
+    display: block;
+}
+.pop03 div {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+.pop03 img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* 팝업4 */
+.pop04 {
+    width: 100%;
+    height: 100vh;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(14, 14, 14, 0.8);
+    overflow-y: scroll;
+    display: none;
+}
+
+.pop04.on {
+    display: block;
+}
+.pop04 div {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+.pop04 img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* 메가위크 */
+.pop05 {
+    width: 100%;
+    height: 100vh;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(14, 14, 14, 0.8);
+    overflow-y: scroll;
+    display: none;
+}
+
+.pop05.on {
+    display: block;
+}
+.pop05 div {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+.pop05 img {
+    width: 100%;
+    height: auto;
+}
+
+/* 봄 기획전 */
+.pop06 {
+    width: 100%;
+    height: 100vh;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(14, 14, 14, 0.8);
+    overflow-y: scroll;
+    display: none;
+}
+
+.pop06.on {
+    display: block;
+}
+.pop06 div {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+.pop06 img {
+    width: 100%;
+    height: auto;
+}
+

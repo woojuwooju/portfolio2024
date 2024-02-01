@@ -102,7 +102,7 @@ header {
 }
 
 .header_inner ul {
-    width: 40%;
+    width: 30%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -226,7 +226,7 @@ section {
 }
 
 .img{
-    width: 60%;
+    width: 61%;
     height: 100%;    
     margin: 0 auto; 
     display: flex;
@@ -238,11 +238,11 @@ section {
 
 
 .img>div {
-    width: 100%;
-    height: 35vh;
+    width: 31.5%;
+    height: 55vh;
     background-color: #ffffff;
-    border-radius: 3vw;
-    margin-bottom: 2vw;
+    margin: 0.5vw;
+    border-radius: 1vw;
     border: 1px solid #e3e3e3;
 }
 
@@ -259,7 +259,7 @@ section {
     width: 100%;
     height: 300%;
     background-image: url(img/website1.png);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
@@ -267,8 +267,8 @@ section {
 .nasa_cover {
     width: 100%;
     height: 100%;
-    background-color: #130E28;
-    border-radius: 3vw;
+    background-color: #000000;
+    border-radius: 1vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -277,7 +277,7 @@ section {
 }
 
 .nasa:hover .nasa_cover {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .nasa:hover .nasa_back{
@@ -290,7 +290,6 @@ section {
 .nasa_txt {
     width: 100%;
     height: 100%;
-    border-radius: 3vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -307,56 +306,46 @@ section {
 
 .nasa_txt p:nth-child(1) {
     text-align: center;
-    margin: 13% 0;
+    margin: 60% 0;
     color: #fff;
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-family: 'Pretendard-Regular';
 }
 
 
 .nasa_button {
-    width: 6%;
-    height: 1.5vw;
+    width: 100%;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
     position: absolute;
-    right: 2vw;
-    bottom: 1vw;
-    perspective: 500px;
-}
-
-.nasa_button img:nth-child(1) {
-    width: 1.2vw;
-    position: absolute;
-    top: 0;
+    top: 13vw;
     left: 0;
-    cursor: pointer;
 }
 
-
-
-.nasa_button img:nth-child(2) {
-    width: 0.3vw;
-    position: absolute;
-    top: 0.5vw;
-    left: 0.4vw;
+.nasa_button div:nth-child(1) {
+    padding: 0.5vw;
     cursor: pointer;
-    animation: button000 1s ease-in-out infinite alternate;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-right:0.5vw ;
+}
+
+.nasa_button div:nth-child(1):hover {
+    background-color: #6F55EA;
 }
 
 .nasa_button a{
     display:block;
-    width: 1.6vw;
-    height: 1.6vw;
-    position: absolute;
-    top: -0.1vw;
-    left: 1.8vw;
+    padding: 0.5vw;
     cursor: pointer;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
-.nasa_button a .nasa000 {
-width: 100%;
-height: 100%;
+.nasa_button a:hover {
+    background-color: #6F55EA;
 }
-
 
 
 
@@ -377,14 +366,15 @@ height: 100%;
     background-image: url(img/website2.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 
 .crocs_cover {
     width: 100%;
     height: 100%;
-    background-color: #130E28;
-    border-radius: 3vw;
+    background-color: #000000;
+    border-radius: 1vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -393,7 +383,7 @@ height: 100%;
 }
 
 .crocs:hover .crocs_cover {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .crocs:hover .crocs_back{
@@ -404,12 +394,12 @@ height: 100%;
 .crocs_txt {
     width: 100%;
     height: 100%;
-    border-radius: 3vw;
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     transition: all 0.7s;
+
 }
 
 .crocs_txt:hover {
@@ -420,55 +410,45 @@ height: 100%;
 
 .crocs_txt p:nth-child(1) {
     text-align: center;
-    margin: 13% 0;
+    margin: 60% 0;
     color: #fff;
-    font-size: 1.5vw;
-    font-family: 'Pretendard-Regular';
-    color: #fff;
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-family: 'Pretendard-Regular';
 }
 
 
 .crocs_button {
-    width: 5%;
-    height: 1.5vw;
+    width: 100%;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
     position: absolute;
-    right: 2vw;
-    bottom: 1vw;
-    perspective: 500px;
-}
-
-.crocs_button img:nth-child(1) {
-    width: 1.2vw;
-    position: absolute;
-    top: 0;
+    top: 13vw;
     left: 0;
-    cursor: pointer;
 }
 
-.crocs_button img:nth-child(2) {
-    width: 0.3vw;
-    position: absolute;
-    top: 0.5vw;
-    left: 0.4vw;
+.crocs_button div:nth-child(1) {
+    padding: 0.5vw;
     cursor: pointer;
-    animation: button000 1s ease-in-out infinite alternate;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-right:0.5vw ;
+}
+
+.crocs_button div:nth-child(1):hover {
+    background-color: #6F55EA;
 }
 
 .crocs_button a{
     display:block;
-    width: 1.6vw;
-    height: 1.6vw;
-    position: absolute;
-    top: -0.1vw;
-    left: 1.8vw;
+    padding: 0.5vw;
     cursor: pointer;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
-.crocs_button a .crocs000 {
-width: 100%;
-height: 100%;
+.crocs_button a:hover {
+    background-color: #6F55EA;
 }
 
 
@@ -487,14 +467,15 @@ height: 100%;
     background-image: url(img/website3.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 
 .bunny_cover {
     width: 100%;
     height: 100%;
-    background-color: #130E28;
-    border-radius: 3vw;
+    background-color: #000000;
+    border-radius: 1vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -503,7 +484,7 @@ height: 100%;
 }
 
 .bunny:hover .bunny_cover {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .bunny:hover .bunny_back{
@@ -514,12 +495,12 @@ height: 100%;
 .bunny_txt {
     width: 100%;
     height: 100%;
-    border-radius: 3vw;
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     transition: all 0.7s;
+
 }
 
 .bunny_txt:hover {
@@ -530,55 +511,46 @@ height: 100%;
 
 .bunny_txt p:nth-child(1) {
     text-align: center;
-    margin: 13% 0;
+    margin: 60% 0;
     color: #fff;
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-family: 'Pretendard-Regular';
 }
 
 
 .bunny_button {
-    width: 5%;
-    height: 1.5vw;
+    width: 100%;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
     position: absolute;
-    right: 2vw;
-    bottom: 1vw;
-    perspective: 500px;
-}
-
-.bunny_button img:nth-child(1) {
-    width: 1.2vw;
-    position: absolute;
-    top: 0;
+    top: 13vw;
     left: 0;
-    cursor: pointer;
 }
 
-.bunny_button img:nth-child(2) {
-    width: 0.3vw;
-    position: absolute;
-    top: 0.5vw;
-    left: 0.4vw;
+.bunny_button div:nth-child(1) {
+    padding: 0.5vw;
     cursor: pointer;
-    animation: button000 1s ease-in-out infinite alternate;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-right:0.5vw ;
+}
+
+.bunny_button div:nth-child(1):hover {
+    background-color: #6F55EA;
 }
 
 .bunny_button a{
     display:block;
-    width: 1.6vw;
-    height: 1.6vw;
-    position: absolute;
-    top: -0.1vw;
-    left: 1.8vw;
+    padding: 0.5vw;
     cursor: pointer;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
-.bunny_button a .bunny000 {
-width: 100%;
-height: 100%;
+.bunny_button a:hover {
+    background-color: #6F55EA;
 }
-
-
 
 
 
